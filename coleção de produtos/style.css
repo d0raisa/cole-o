@@ -1,11 +1,22 @@
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header_container{
-    width: 95%;
+:root {
+ --fonteterciaria : "Montserrat" , sem serifa ;
+ --fontejudson : "Judson" , sans-serif ;
+
+}
+
+/* .header_container{
+    width: 100%;
     max-width: 1200px;
     margin: auto;
      background-color: aqua; 
@@ -13,13 +24,24 @@
     justify-content: space-between;
     align-items: center;
     height: 120px;
+} */
+
+
+
+
+header{
+    height: 135px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF7E6;
+    margin: 0 auto;
 }
 
-.container img{
-     width: 95%;
+.container{
     max-width: 1200px;
-    height: 130px;
-    width: 130px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .header_container{
@@ -27,8 +49,14 @@
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    width: 1200px;
+
 }
 
+    .container img{
+    max-width: 1200px;
+    width: 250px;
+}
 
 
 
@@ -55,4 +83,93 @@
 
 .box_busca input:focus {
     outline: none;
+}
+
+.texto_cabeçalho{
+    display: flex;
+
+} 
+
+.texto_cabeçalho a{
+    font-family: var(--fonteterciaria);
+    font-size: 18px;
+    /* color: #062047; */
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.texto_cabeçalho img{
+width: 80px;
+}
+/* ----------imagem banner---------- */
+.banner{
+    background-color: aqua;
+   
+    
+}
+
+
+.banner_container{
+    display: flex;
+ /* justify-content: right; */
+
+}
+
+.img_banner img{
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+   
+}
+
+.textos_banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+.linha1 {
+    font-family: var(--fonteterciaria);
+    color: #C5A028;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+.linha2 {
+    font-family: var(--fontejudson);
+    font-size: 48px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #062047;
+}
+
+
+.linha3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #000;
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+
+.linha4 {
+    font-family: var(--fonteterciaria);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #C5A028
+    
+
+
 }
